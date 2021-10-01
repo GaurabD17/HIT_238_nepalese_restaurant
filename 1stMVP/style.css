@@ -1,0 +1,113 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnavigation {
+    overflow: hidden;
+    background-color: rgb(32, 235, 32);
+  }
+  
+  /* Style the topnav links */
+  .topnavigation a {
+    float: left;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnavigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* image */
+  .menuimg {
+    background-color: rgb(14, 168, 73);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .reservimg {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  
+  /* card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /*  when the screen is less than 800px wide, it will stack two column on top instead of next to each other*/
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /*when the screen is less than 400px wide, it will stack navigation links column on top instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
